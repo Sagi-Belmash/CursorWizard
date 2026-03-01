@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://d0m75n8f530fi"]
+
+[ext_resource type="Script" uid="uid://cc5uappqpd11s" path="res://Scripts/Movement.gd" id="1_i5fxo"]
+[ext_resource type="Texture2D" uid="uid://bc8l1h8wb3ch" path="res://Assets/Sprites/wizard_idle_0.png" id="2_i5fxo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n46lf"]
+size = Vector2(20, 32)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1980939928]
+disable_mode = 2
+script = ExtResource("1_i5fxo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1483662156]
+position = Vector2(-2, 0)
+shape = SubResource("RectangleShape2D_n46lf")
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=2118443143]
+z_index = 1
+texture_filter = 1
+scale = Vector2(2, 2)
+texture = ExtResource("2_i5fxo")
