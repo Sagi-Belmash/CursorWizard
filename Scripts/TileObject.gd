@@ -1,4 +1,4 @@
-class_name InteractionBox
+class_name TileObject
 extends Node2D
 
 @export var width: int = 1:
