@@ -1,13 +1,14 @@
 [gd_scene format=3 uid="uid://d0m75n8f530fi"]
 
-[ext_resource type="Script" uid="uid://cc5uappqpd11s" path="res://Scripts/Movement.gd" id="1_i5fxo"]
+[ext_resource type="Script" uid="uid://cc5uappqpd11s" path="res://Scripts/Player.gd" id="1_i5fxo"]
 [ext_resource type="Texture2D" uid="uid://bc8l1h8wb3ch" path="res://Assets/Sprites/wizard_idle_0.png" id="2_i5fxo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n46lf"]
 size = Vector2(20, 32)
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1980939928]
+[node name="Player" type="CharacterBody2D" unique_id=1980939928]
 disable_mode = 2
+input_pickable = true
 script = ExtResource("1_i5fxo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1483662156]
